@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Rock Paper Scissors Part 1</title>
+</head>
+
+<body>
+
+<h1>Rock Paper Scissors!</h1>
+<h2>Pick R,P,S to Play</h2>
+<hr/>
+
+<p id="pick-text"></p>
+
+<p id="compPick-text"></p>
+
+<p id="win-text">
+
+<p id="loss-text">
+
+<p id="tie-text">
+
+
+  <script type="text/javascript">
+
+    var compChoices = ["r", "p", "s"],
+        wins = 0,
+        losses = 0,
+        ties = 0,
+        playerChoice = document.getElementById("pick-text"),
+        compChoice = document.getElementById("compPick-text"),
+        win = document.getElementById("win-text"),
+        loss = document.getElementById("loss-text"),
+        tie = document.getElementById("tie-text")
+
+        document.onkeyup = function(event) {
+          var youChose = event.key,
+              compPick = compChoices[Math.floor(Math.random() * compChoices.length)]
+
+
+          if ((youChose === "r") || (youChose === "p") || (youChose ==="s")) {
+            if (youChose === compPick) {
+              tie++;
+            } else if ((youChose === "r") && (compPick === "s") || (youChose === "p") && (compPick === "r") ||
+                      (youChose === "s") && (compPick === "p")) {
+                      win++;
+            } else loss++;
+
+        playerChoice.textContent = "You chose: " + youChose;
+        compChoice.textContent = "The computer chose: " + compPick;
+        win.textContent = "wins: " + win;
+        loss.textContent = "losses: " + loss;
+        tie.textContent = "ties: " + tie;
+        }
+        }
+  </script>
+
+</body>
+
+</html>

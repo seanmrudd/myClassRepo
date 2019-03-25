@@ -1,0 +1,19 @@
+p {
+    font-family: 'Raleway';
+}
+
+.bold {
+    font-weight: bold;
+}
+
+.enlarge {
+    font-size: 24px;
+}
+
+.line-height {
+    line-height: 50px;
+}
+
+h1 {
+    font-family: 'Roboto';
+}

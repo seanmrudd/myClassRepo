@@ -1,0 +1,51 @@
+/**
+ * Google Fonts Demo
+ **/
+
+/* Add in the Google Fonts of your choice */
+
+h1 {
+    font-family: 'Hammersmith One';
+    padding: 20px;
+    background: black;
+    color: white;
+}
+
+h3 h4 {
+    font-family: 'Bangers';
+}
+
+p {
+    font-family: 'Righteous';
+}
+
+a {
+    color: darkred;
+    text-decoration: none;
+}
+
+a:hover {
+    background: blue;
+    color: white;
+    padding: 5px;
+    font-weight: bold;
+}
+
+
+a:focus {
+    background: orange;
+    color: black;
+}
+
+.blackgreen:active {
+    background: black;
+    color: greenyellow;
+    padding: 20px;
+}
+
+.nice {
+    background: blue;
+    color: white;
+    padding: 5px;
+    font-weight: bold;
+}
